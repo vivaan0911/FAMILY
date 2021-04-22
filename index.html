@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PROJECT 78- FAMILY</title>
+    </head>
+    <body>
+        <h1>MEMBERS OF THE FAMILY</h1>
+        <br>
+        <img id="photo" src="cover.jpg">
+        <h3 id="name">My Family</h3>
+        <button id="next" onclick="next_member()">NEXT</button>
+        <script>
+            var member_photos=["cover.jpg","dad.png","mom.png","brother.jpg","sister.jpg"];
+            var member_names=["My Family","Mehul","Magdhi","Vivaan","Hazel"];
+            var i=0;
+            function next_member() {
+            document.getElementById("photo").src=member_photos[i];
+            document.getElementById("name").innerHTML=member_names[i];
+            i++
+            }
+        </script>
+    </body>
+</html>
